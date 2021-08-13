@@ -2,7 +2,5 @@ hello world!!! 66666666
 hello world!!!
 hello world!!!
 hello world!!!
-<<<<<<< HEAD
 hello world!!! master test
 hello world!!! hot-fix test
->>>>>>> hot-fix
