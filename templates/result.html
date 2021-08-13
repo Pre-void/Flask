@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+<!--{% macro img(id) -%}-->
+<!--    <img src="../static/result/{{id}}">-->
+<!--{%- endmacro %}-->
+<a></a>
+<div align="center">
+    {% if type == "VGG" %}
+      <img src="{{ url_for('static', filename='result/') }}{{id}}_vgg.jpg">
+    {% elif type == "ResNet" %}
+      <img src="{{ url_for('static', filename='result/') }}{{id}}_res.jpg">
+    {% elif type == "GoogLeNet" %}
+      <img src="{{ url_for('static', filename='result/') }}{{id}}_google.jpg">
+    {% endif %}
+</div>
+
+</body>
+</html>
