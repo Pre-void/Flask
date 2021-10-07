@@ -27,8 +27,8 @@ train_input_img_paths = sorted(
 )
 train_target_img_paths = sorted(
     [
-        os.path.join(val_target_dir, fname)
-        for fname in os.listdir(val_target_dir)
+        os.path.join(train_target_dir, fname)
+        for fname in os.listdir(train_target_dir)
         if fname.endswith(".png")
     ]
 )
@@ -42,8 +42,8 @@ val_input_img_paths = sorted(
 )
 val_target_img_paths = sorted(
     [
-        os.path.join(train_target_dir, fname)
-        for fname in os.listdir(train_target_dir)
+        os.path.join(val_target_dir, fname)
+        for fname in os.listdir(val_target_dir)
         if fname.endswith(".png")
     ]
 )
